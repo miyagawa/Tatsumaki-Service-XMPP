@@ -1,5 +1,7 @@
 package Tatsumaki::Service::XMPP;
 use 5.008_001;
+our $VERSION = "0.01";
+
 use Moose;
 extends 'Tatsumaki::Service';
 
