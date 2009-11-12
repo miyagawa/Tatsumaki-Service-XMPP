@@ -1,5 +1,5 @@
 package Tatsumaki::Handler::XMPP;
-use Moose;
+use Any::Moose;
 extends 'Tatsumaki::Handler';
 
 use Tatsumaki::Service::XMPP::Message;

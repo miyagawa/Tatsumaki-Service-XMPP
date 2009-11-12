@@ -1,5 +1,5 @@
 package Tatsumaki::Service::XMPP::Message;
-use Moose;
+use Any::Moose;
 
 has from => (is => 'rw', isa => 'Str');
 has to   => (is => 'rw', isa => 'Str');

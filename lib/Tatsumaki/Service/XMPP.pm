@@ -2,7 +2,7 @@ package Tatsumaki::Service::XMPP;
 use 5.008_001;
 our $VERSION = "0.01";
 
-use Moose;
+use Any::Moose;
 extends 'Tatsumaki::Service';
 
 use constant DEBUG => $ENV{TATSUMAKI_XMPP_DEBUG};
@@ -77,7 +77,7 @@ sub start {
     $self->xmpp->start;
 }
 
-no Moose;
+no Any::Moose;
 __PACKAGE__->meta->make_immutable;
 
 1;
